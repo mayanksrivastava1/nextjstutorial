@@ -1,12 +1,15 @@
-"use client"
-import Link from 'next/link'
+import Image from 'next/image'
+import '../app/globals.css'
+import Profile from '../../public/next.svg'
 
 export default function Home() {
   return (
-    <main >
-      <h1>Products</h1>
-      <Link href='/productlist'>Go to product page</Link>
-    </main>
+    <>
+      <h1>Image Optimizations in Next Js</h1>
+      <Image src={Profile} />
+      {/* <img src={Profile.src}/> */}
+      
+    </>
   )
 }
 
